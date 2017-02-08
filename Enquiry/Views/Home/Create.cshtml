@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_WebLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        @using (Html.BeginForm())
+        {
+            <div role="form">
+                <h2 style="margin-top:100px;">Make <small>a Enquiry.</small></h2>
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="E-mail Address" tabindex="3">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Mobile Number" tabindex="4">
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Educational Qualification" tabindex="1">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Experience in Years" tabindex="2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+
+                            @Html.DropDownList("Courses", (IEnumerable<SelectListItem>)ViewBag.CourseId, "-- Select Course --", new { @class = "form-control input-lg" })
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Domain" tabindex="4">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            @Html.DropDownList("Chanels", (IEnumerable<SelectListItem>)ViewBag.ChanelId, "-- Select Chanel --", new { @class = "form-control input-lg" })
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="form-group">
+                           @Html.DropDownList("Sources", (IEnumerable<SelectListItem>)ViewBag.SourceId,"-- Select Source --", new { @class = "form-control input-lg" })
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6"><input type="submit" value="Cancel" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                    <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Make a Enquiry</a></div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

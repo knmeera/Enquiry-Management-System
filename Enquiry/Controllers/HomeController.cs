@@ -30,5 +30,11 @@ namespace Enquiry.Controllers
 
         }
 
+        public ActionResult AboutUs()
+        {
+
+            return View();
+        }
+
     }
 }

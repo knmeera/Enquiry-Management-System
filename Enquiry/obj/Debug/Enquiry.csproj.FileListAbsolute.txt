@@ -85,6 +85,5 @@ C:\Users\Nrayana\Source\Repos\EnquiryMS\Enquiry\bin\System.Web.Razor.xml
 C:\Users\Nrayana\Source\Repos\EnquiryMS\Enquiry\bin\System.Web.WebPages.xml
 C:\Users\Nrayana\Source\Repos\EnquiryMS\Enquiry\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Nrayana\Source\Repos\EnquiryMS\Enquiry\bin\System.Web.WebPages.Razor.xml
-C:\Users\Nrayana\Source\Repos\EnquiryMS\Enquiry\obj\Debug\Enquiry.csprojResolveAssemblyReference.cache
 C:\Users\Nrayana\Source\Repos\EnquiryMS\Enquiry\obj\Debug\Enquiry.dll
 C:\Users\Nrayana\Source\Repos\EnquiryMS\Enquiry\obj\Debug\Enquiry.pdb

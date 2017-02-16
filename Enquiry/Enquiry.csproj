@@ -130,6 +130,7 @@
     </Compile>
     <Compile Include="Models\Chanel.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Enquiry.cs" />
     <Compile Include="Models\Source.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

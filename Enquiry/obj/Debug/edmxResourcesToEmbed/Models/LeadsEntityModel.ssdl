@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LeadsManagementModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LeadsManagementModelStoreContainer">
+    <EntitySet Name="Departments" EntityType="LeadsManagementModel.Store.Departments" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="DeptID" />
+    </Key>
+    <Property Name="DeptID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DeptName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DeptShortName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DeptDesc" Type="nvarchar" MaxLength="200" />
+    <Property Name="Enabled" Type="bit" Nullable="false" />
+  </EntityType>
+</Schema>

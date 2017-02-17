@@ -1,0 +1,50 @@
+﻿@model Enquiry.Models.Department
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Department</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DeptID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DeptID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DeptName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DeptName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DeptShortName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DeptShortName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DeptDesc)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DeptDesc)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Enabled)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Enabled)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

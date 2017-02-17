@@ -1,0 +1,67 @@
+﻿@model Enquiry.Models.Department
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Department</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DeptID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DeptID)
+            @Html.ValidationMessageFor(model => model.DeptID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DeptName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DeptName)
+            @Html.ValidationMessageFor(model => model.DeptName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DeptShortName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DeptShortName)
+            @Html.ValidationMessageFor(model => model.DeptShortName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DeptDesc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DeptDesc)
+            @Html.ValidationMessageFor(model => model.DeptDesc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Enabled)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Enabled)
+            @Html.ValidationMessageFor(model => model.Enabled)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

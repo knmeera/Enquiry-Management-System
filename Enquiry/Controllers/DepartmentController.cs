@@ -71,8 +71,7 @@ namespace Enquiry.Controllers
             }
             return View(department);
         }
-
-        //
+                //
         // POST: /Default1/Edit/5
 
         [HttpPost]

@@ -8,8 +8,7 @@
 
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
-
-    <fieldset>
+        <fieldset>
         <legend>Department</legend>
 
         @Html.HiddenFor(model => model.DeptID) 
